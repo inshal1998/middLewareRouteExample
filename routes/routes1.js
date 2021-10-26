@@ -1,5 +1,5 @@
 const router = require("express").Router();
-const bodyParser = require('body-parser')
+const bodyParser = require('body-parser') //converts the data in JSON coming from frontEnd
 router.use(bodyParser.json()) // for parsing application/json
 router.use(bodyParser.urlencoded({ extended: true })) // for parsing application/x-www-form-urlencoded
 const middleWare = require('../middleware/middle')
